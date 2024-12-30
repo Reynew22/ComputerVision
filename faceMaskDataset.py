@@ -60,10 +60,10 @@ val_transforms = T.Compose([
     T.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225]),
 ])
 
-train_images_dir = r"C:\Users\METE\Desktop\face_mask_dataset\images\train"
-train_labels_dir = r"C:\Users\METE\Desktop\face_mask_dataset\labels\train"
-val_images_dir = r"C:\Users\METE\Desktop\face_mask_dataset\images\val"
-val_labels_dir = r"C:\Users\METE\Desktop\face_mask_dataset\labels\val"
+train_images_dir = r"data//face_mask_dataset//images//train"
+train_labels_dir = r"data//face_mask_dataset//labels//train"
+val_images_dir = r"data//face_mask_dataset//images//val"
+val_labels_dir = r"data//face_mask_dataset//labels//val"
 
 train_dataset = FaceMaskDataset(train_images_dir, train_labels_dir, transforms=train_transforms)
 val_dataset = FaceMaskDataset(val_images_dir, val_labels_dir, transforms=val_transforms)

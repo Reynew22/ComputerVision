@@ -58,10 +58,10 @@ def train_yolo(yolo_model, train_images_dir, val_images_dir, epochs=10):
         epochs=epochs,
     )
 
-train_images_dir = r"C:\Users\METE\Desktop\face_mask_dataset\images\train"
-train_labels_dir = r"C:\Users\METE\Desktop\face_mask_dataset\labels\train"
-val_images_dir = r"C:\Users\METE\Desktop\face_mask_dataset\images\val"
-val_labels_dir = r"C:\Users\METE\Desktop\face_mask_dataset\labels\val"
+train_images_dir = r"data//face_mask_dataset//images//train"
+train_labels_dir = r"data//face_mask_dataset//labels//train"
+val_images_dir = r"data//face_mask_dataset//images//val"
+val_labels_dir = r"data//face_mask_dataset//labels//val"
 
 train_transforms = T.Compose([
     T.Resize((512, 512)),

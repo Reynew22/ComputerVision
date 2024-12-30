@@ -1,8 +1,8 @@
 from ultralytics import YOLO
 
 
-data_yaml_path = ".venv/dataset.yaml"
-model_save_dir = ".venv/YOLO_FaceMaskDetection"
+data_yaml_path = "dataset.yaml"
+model_save_dir = "YOLO_FaceMaskDetection"
 pretrained_model = "yolov5su.pt"
 
 
@@ -25,7 +25,7 @@ def train_yolo():
         pretrained=True,
         verbose=True,
     )
-    print("YOLO Model Training Completed.")
+    print("YOLO model training completed.")
 
 
 def evaluate_yolo():
@@ -37,7 +37,7 @@ def evaluate_yolo():
 
     # evaluate the model
     results = yolo_model.val(data=data_yaml_path, device="cpu")
-    print("Evaluation Results:")
+    print("Evaluation results:")
     print(results)
 
 

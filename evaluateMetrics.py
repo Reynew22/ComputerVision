@@ -5,8 +5,8 @@ import torchvision.transforms as T
 from sklearn.metrics import precision_recall_fscore_support
 
 
-val_images_dir = "C:\\Users\\METE\\Desktop\\face_mask_dataset\\images\\val"
-val_labels_dir = "C:\\Users\\METE\\Desktop\\face_mask_dataset\\labels\\val"
+val_images_dir = "data\\face_mask_dataset\\images\\val"
+val_labels_dir = "data\\face_mask_dataset\\labels\\val"
 model_path = "path_to_model"
 
 # for validation

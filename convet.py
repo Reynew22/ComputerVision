@@ -4,8 +4,8 @@ import random
 import xml.etree.ElementTree as ET
 from PIL import Image
 
-archive_images = "archive/images"
-archive_annotations = "archive/annotations"
+archive_images = "data//archive//images"
+archive_annotations = "data//archive/annotations"
 output_dataset = "face_mask_dataset"
 
 os.makedirs(f"{output_dataset}/images/train", exist_ok=True)

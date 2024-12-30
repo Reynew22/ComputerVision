@@ -67,13 +67,13 @@ val_transforms = T.Compose([
 ])
 
 train_dataset = YoloMaskDataset(
-    images_folder=r"C:\Users\METE\Desktop\face_mask_dataset\images\train",
-    labels_folder=r"C:\Users\METE\Desktop\face_mask_dataset\labels\train",
+    images_folder=r"data//face_mask_dataset//images//train",
+    labels_folder=r"data//face_mask_dataset//labels//train",
     transforms=train_transforms
 )
 
 val_dataset = YoloMaskDataset(
-    images_folder=r"C:\Users\METE\Desktop\face_mask_dataset\images\val",
-    labels_folder=r"C:\Users\METE\Desktop\face_mask_dataset\labels\val",
+    images_folder=r"data//face_mask_dataset//images//val",
+    labels_folder=r"data//face_mask_dataset//labels//val",
     transforms=val_transforms
 )

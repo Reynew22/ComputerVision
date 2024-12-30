@@ -63,8 +63,8 @@ transform = transforms.Compose([
 ])
 
 
-images_folder = r"C:\Users\METE\Desktop\archive\images"
-annotations_folder = r"C:\Users\METE\Desktop\archive\annotations"
+images_folder = r"data//archive//images"
+annotations_folder = r"data//archive//annotations"
 dataset = MaskDataset(images_folder, annotations_folder, transforms=transform)
 data_loader = DataLoader(dataset, batch_size=4, shuffle=True, collate_fn=lambda x: tuple(zip(*x)))
 
